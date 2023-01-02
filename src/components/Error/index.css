@@ -1,8 +1,23 @@
-.error{width: 90%;height: 100%; 
+/* Small devices (landscape phones, 576px and up) */ 
+@media (max-width: 768px) {   
+        .error img{width: 75%;height: 55%;min-width: 350px;;max-width: 525px;}
+} 
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */ 
+@media (min-width: 768px) {   
+    .error img{width: 75%;height: 55%;}
+} 
+/* Large devices (desktops, 992px and up) */ 
+@media (min-width: 992px) {  
+     .error img{width: 95%;height: 55%;}
+} 
+ 
+.error{ 
+    width: 90%;height: 100%;
     background-color: var(--image-background);
     flex-direction: column;
 }
-.error img{width: 75%;height: 55%;} 
+/* .error img{width: 75%;height: 55%;}  */
 .error h2{
     margin-top: 0;text-align: center;
     font-size: x-large;font-family: fantasy;font-weight: 300;
