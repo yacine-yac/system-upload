@@ -1,17 +1,51 @@
+/* Small devices (landscape phones, 576px and up) */ 
+@media (max-width: 768px) {   
+     .d1{width: 100vw;height:100vh; } 
+     /* Area reserved for upload input */
+     .area1{width: 100%;height: 30%;  }
+     .area1 h1{font-size: 2.5rem;}
+     .area1 label{
+         width: 60vw;max-width: 240px;min-width: 143px;
+         height: 48px;
+     }
+     .area2{width: 100%;height: 70%;}
+} 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */ 
+@media (min-width: 768px) {   
+        .d1{width: 65vw;max-width:500px;
+            height:80vh; }
+        .area1{width: 100%;height: 35%;  }
+        .area1 h1{font-size: 1.9rem;}
+        .area1 label{  width: 45%;height: 48px;}
+        .area2{width: 100%;height: 65%;} 
+} 
+ 
+/* Large devices (desktops, 992px and up) */ 
+@media (min-width: 992px) {  
+        .d1{width: 34vw; height:70vh; } 
+        .area1{width: 100%;height: 35%;  }
+        .area1 h1{font-size: 1.7rem;}
+        .area1 label{  width: 55%;height: 38px;}
+        .area2{width: 100%;height: 65%;} 
+} 
+ 
 .d1{
-    width: 32vw;height:70vh;
+    /* border: 1px solid red; */
     background-color: var(--background); 
     display: flex; flex-direction: column;  
 }
-form{width: 100%;height:100%;}
+form{
+    width: 100%;height:100%;
+    /* border:2px solid rgb(55, 255, 0); */
+}
 
 /* Area reserved for upload input */
 .area1{  
-    width: 100%;height: 30%;
+    /* width: 100%;height: 30%; */
     flex-direction: column; 
 }
 .area1 h1{
-    color: white;font-size: 28px;font-family: Times, Times New Roman, serif;font-weight: 100;
+    color: white;font-family: Times, Times New Roman, serif;font-weight: 100;
     /* text-align: center;margin-top: 10px; */
 }
 .area1 input[type="file"]{
@@ -19,7 +53,7 @@ form{width: 100%;height:100%;}
 }
 
 .area1 label{ 
-   width: 180px; height: 40px; 
+    /* width: 180px; height: 40px;  */
     border-radius: 25px;
     background-image: url('icons/upload.png');
     background-repeat: no-repeat;background-position: center; 
@@ -38,17 +72,14 @@ form{width: 100%;height:100%;}
       overflow-y: scroll;
       position: relative; 
       /* z-index: 0; */
-    width: 100%;height: 70%; 
+    /* width: 100%;height: 70%;  */
     background-color: var(--backgroundArea2); 
     /* margin: 0px;  */
 }
 .area2 + .peace{ border: 1px solid red;
     height: 55%;
     flex-direction: column;
-}
-.area2 .area21{border:1px solid red;margin: auto;
-    width: 95%;min-height: 100%;
-}
+} 
 .area2::-webkit-scrollbar { 
     display: none;  /* Safari and Chrome */
 } 
