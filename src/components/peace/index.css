@@ -5,7 +5,7 @@
 } 
 /**/
 @media (min-width: 576px) { 
-    .peace{width: 70%;height: 65px;}
+    .peace{width: 70%;height: 60px;}
       .area2 .peace > div{width: 85%;height: 95%;}
 }  
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */ 
@@ -28,8 +28,7 @@
 
 
 
-.peace{ border: 1px solid red;
-    /* width: 90%;height: 65px; */
+.peace{ 
     margin: 10px auto;
     border-radius: 18px;
     position:relative;
@@ -47,8 +46,7 @@
     margin: 17px 10px ;margin-right: 0px;
     border-radius: 50%;
 }
-.area2 .peace > div{border: 1px solid green;
-    /* width: 78%;height: 95%; */
+.area2 .peace > div{ 
     padding-left: 5px;  
     flex-direction: column; 
 }
