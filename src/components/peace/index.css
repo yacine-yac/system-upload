@@ -1,5 +1,35 @@
-.peace{
-    width: 90%;height: 65px;
+/* Small devices (landscape phones, 576px and up) */ 
+@media (max-width: 576px) {   
+    .peace{width: 90%;height: 65px;}
+    .area2 .peace > div{width: 78%;height: 95%;}
+} 
+/**/
+@media (min-width: 576px) { 
+    .peace{width: 70%;height: 65px;}
+      .area2 .peace > div{width: 85%;height: 95%;}
+}  
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */ 
+@media (min-width: 768px) {   
+ 
+    .peace{width: 90%;height: 65px;}
+    .area2 .peace > div{width: 78%;height: 95%;}
+    /* .area2 .peace > div{width: 85%;height: 95%;} */
+} 
+ 
+/* Large devices (desktops, 992px and up) */ 
+@media (min-width: 992px) {  
+ 
+} 
+ 
+/* Extra large devices (large desktops, 1200px and up) */ 
+@media (min-width: 1200px) {   
+     
+} 
+
+
+
+.peace{ border: 1px solid red;
+    /* width: 90%;height: 65px; */
     margin: 10px auto;
     border-radius: 18px;
     position:relative;
@@ -17,8 +47,9 @@
     margin: 17px 10px ;margin-right: 0px;
     border-radius: 50%;
 }
-.area2 .peace > div{
-    width: 78%;height: 95%;padding-left: 5px;  
+.area2 .peace > div{border: 1px solid green;
+    /* width: 78%;height: 95%; */
+    padding-left: 5px;  
     flex-direction: column; 
 }
 .area2 .peace div h2{ 
